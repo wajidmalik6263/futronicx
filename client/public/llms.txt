@@ -1,0 +1,22 @@
+# North Dry Fruits
+
+> North Dry Fruits is an online store offering premium quality dry fruits, nuts, seeds and natural products sourced from Gilgit-Baltistan, Pakistan, and delivered fresh across the country.
+
+North Dry Fruits sells natural products with weight-based pricing (250g, 500g, 1kg). The site supports browsing by category, product search, cart and checkout, order tracking, and multiple payment methods including Cash on Delivery, Easypaisa, JazzCash and bank transfer.
+
+## Main pages
+
+- [Home](https://northdryfruits.com/): Featured products, categories and current offers.
+- [Products](https://northdryfruits.com/products): Full catalog of dry fruits, nuts and natural products with filtering.
+- [About](https://northdryfruits.com/about): Company story, sourcing and quality commitment.
+- [Contact](https://northdryfruits.com/contact): Ways to reach customer support.
+- [Track Order](https://northdryfruits.com/track-order): Look up the status of a placed order.
+- [Blog](https://northdryfruits.com/blog): Articles on nutrition, recipes and product guides.
+
+## Policies
+
+- [Privacy Policy](https://northdryfruits.com/privacy): Privacy practices and terms of service.
+
+## Optional
+
+- [Sitemap](https://northdryfruits.com/sitemap.xml): Machine-readable list of all indexable URLs.

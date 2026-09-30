@@ -1,0 +1,17 @@
+{
+    "name": "gbmarket",
+    "version": "1.0.0",
+    "description": "GBMarket — full-stack e-commerce platform (Express API + React frontend)",
+    "private": true,
+    "scripts": {
+        "install:all": "cd client && npm install --include=dev && cd ../server && npm install",
+        "build:client": "cd client && npm run build",
+        "build": "npm run install:all && npm run build:client",
+        "start": "cd server && npm start",
+        "dev": "cd server && npm run dev",
+        "seed": "cd server && npm run seed"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}
