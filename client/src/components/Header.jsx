@@ -47,14 +47,12 @@ export default function Header() {
     ];
 
     // On home page: transparent at top, solid on scroll. On other pages: always solid.
-    const headerBg = !isHome || scrolled
-        ? 'bg-[#2A2116] border-b border-[#3d3320] shadow-md'
-        : 'bg-transparent border-b border-transparent';
+   const headerBg = 'bg-white border-b border-gray-200 shadow-md';
 
     // Skeleton header while settings are loading
     if (settingsLoading) {
         return (
-            <header className="fixed top-0 left-0 right-0 z-50 bg-[#2A2116] border-b border-[#3d3320]">
+           <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBg}`}>
                 <div className="max-w-[1400px] mx-auto px-4 sm:px-6">
                     <div className="flex items-center justify-between h-16">
                         {/* Logo skeleton — width matches the loaded logo box (w-40) to avoid layout shift */}
@@ -119,7 +117,7 @@ export default function Header() {
                                 className={({ isActive }) =>
                                     `text-sm font-medium transition-colors py-1 cursor-pointer ${isActive
                                         ? 'text-[#F5A623] font-semibold'
-                                        : 'text-white/90 hover:text-[#F5A623]'
+                                        : 'text-[#525252] hover:text-[#F5A623]'
                                     }`
                                 }
                             >

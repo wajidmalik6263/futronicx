@@ -126,7 +126,7 @@ export default function HeroBanner({ config }) {
                         onError={(e) => { e.target.onerror = null; e.target.src = '/placeholder.png'; }}
                     />
                     {/* Dark gradient overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#2A2116]/95 via-[#2A2116]/80 to-[#2A2116]/40" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#2A2116]/95 via-[#2A2116]/80 to-transparent" />
                 </div>
             ))}
 
@@ -135,14 +135,14 @@ export default function HeroBanner({ config }) {
                 <div className="max-w-2xl space-y-4 sm:space-y-5">
                     {/* Badge */}
                     {slide.badge && (
-                        <div className="flex items-center gap-2 text-[#F5A623] text-xs sm:text-sm font-bold tracking-wider uppercase hero-slide-up" style={{ animationDelay: '0.1s' }}>
+                        <div className="flex items-center gap-2 text-[#F5A623] text-xs sm:text-sm font-bold tracking-wider  hero-slide-up" style={{ animationDelay: '0.1s' }}>
                             <span className="w-6 h-[2px] bg-[#F5A623] inline-block" />
                             <span>{slide.badge}</span>
                         </div>
                     )}
 
                     {/* Title */}
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight hero-slide-up" style={{ fontFamily: "'Inter', 'Inter Fallback', 'Segoe UI', sans-serif" }}>
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-4xl font-extrabold leading-[1.4] tracking-tight hero-slide-up" style={{ fontFamily: "'Inter', 'Inter Fallback', 'Segoe UI', sans-serif" }}>
                         {(() => {
                             const title = slide.title || '';
                             // Split at & or newline for natural break
@@ -160,7 +160,7 @@ export default function HeroBanner({ config }) {
                             return (
                                 <>
                                     <span className="text-white">{line1}</span>
-                                    {line2 && <><br /><span className="text-[#F5A623]">{line2}</span></>}
+                                    {line2 && <> <span className="text-[#F5A623]">{line2}</span></>}
                                 </>
                             );
                         })()}
@@ -200,7 +200,7 @@ export default function HeroBanner({ config }) {
                         )}
                         <Link
                             to="/about"
-                            aria-label="Learn more about GB Market"
+                            aria-label="Learn more about Us"
                             className="inline-flex items-center px-6 py-3 text-white font-bold text-sm rounded-full border-2 border-white/40 hover:border-white hover:bg-white/10 transition-all duration-300"
                         >
                             About Us

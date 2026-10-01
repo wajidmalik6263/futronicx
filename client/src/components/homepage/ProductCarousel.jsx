@@ -40,7 +40,7 @@ export default function ProductCarousel({ config }) {
     useEffect(() => {
         if (products.length === 0 || isPaused) return;
         const interval = setInterval(() => {
-            setCurrentIndex(prev => (prev + 1) % Math.ceil(products.length / 2));
+            setCurrentIndex(prev => (prev + 1) % Math.ceil(products.length / 4));
         }, 4500);
         return () => clearInterval(interval);
     }, [products.length, isPaused]);
@@ -61,7 +61,7 @@ export default function ProductCarousel({ config }) {
 
     if (products.length === 0) return null;
 
-    const totalGroups = Math.ceil(products.length / 2);
+    const totalGroups = Math.ceil(products.length / 4);
 
     return (
         <section className="max-w-[1400px] mx-auto px-4 sm:px-6">
@@ -105,9 +105,9 @@ export default function ProductCarousel({ config }) {
                         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                     >
                         {Array.from({ length: totalGroups }).map((_, groupIdx) => {
-                            const groupItems = products.slice(groupIdx * 2, groupIdx * 2 + 2);
+                            const groupItems = products.slice(groupIdx * 4, groupIdx * 4 + 4);
                             return (
-                                <div key={groupIdx} className="w-full shrink-0 grid grid-cols-2 gap-4 sm:gap-4">
+                                <div key={groupIdx} className="w-full shrink-0 grid grid-cols-2 sm:grid-cols-4 gap-4">
                                     {groupItems.map(item => (
                                         <Link
                                             key={item.id}

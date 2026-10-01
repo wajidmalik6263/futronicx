@@ -38,7 +38,7 @@ export default function ProductGrid({ config }) {
         <section className="max-w-[1400px] mx-auto px-4 sm:px-6 space-y-6 sm:space-y-8">
             <div className="text-center max-w-2xl mx-auto space-y-2">
                 {badge && (
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F5A623] text-[#3A2E1F] text-xs font-bold uppercase tracking-wider">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#fa6800] text-[#fff] text-xs font-bold uppercase tracking-wider">
                         <Award className="w-4 h-4" />
                         <span>{badge}</span>
                     </div>
@@ -71,7 +71,7 @@ export default function ProductGrid({ config }) {
             <div className="text-center pt-4">
                 <Link
                     to="/products"
-                    className="inline-flex items-center gap-2 px-8 py-3 bg-[#F5A623] hover:bg-[#D97706] text-[#3A2E1F] hover:text-white font-bold text-sm rounded-full shadow-md hover:shadow-lg transition-all duration-300 group"
+                    className="inline-flex items-center gap-2 px-8 py-3 bg-[#fa6800] hover:bg-[#D97706] text-[#fff] hover:text-white font-bold text-sm rounded-full shadow-md hover:shadow-lg transition-all duration-300 group"
                 >
                     <span>View All Products</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

@@ -106,7 +106,7 @@ export default function Footer() {
 
             {/* Main Footer Links */}
             <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-6 sm:py-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
                     {/* Brand Column */}
                     <div className="space-y-4">
@@ -180,22 +180,13 @@ export default function Footer() {
                     </div>
 
                     {/* Shop by Region */}
-                    <div>
-                        <h2 className="text-lg font-bold font-body text-white mb-4 text-[#F5A623]">Shop by Region</h2>
-                        <ul className="flex flex-wrap gap-x-4 gap-y-2.5 sm:block sm:space-y-2.5 text-sm text-[#F5EFE0]/80">
-                            <li><Link to="/dry-fruits-pakistan" className="hover:text-[#F5A623] transition-colors">Dry Fruits in Pakistan</Link></li>
-                            <li><Link to="/dry-fruits-gilgit-baltistan" className="hover:text-[#F5A623] transition-colors">Dry Fruits from Gilgit-Baltistan</Link></li>
-                            <li><Link to="/dry-fruits-skardu" className="hover:text-[#F5A623] transition-colors">Dry Fruits from Skardu</Link></li>
-                            <li><Link to="/dry-fruits-hunza" className="hover:text-[#F5A623] transition-colors">Dry Fruits from Hunza</Link></li>
-                            <li><Link to="/dry-fruits-gilgit" className="hover:text-[#F5A623] transition-colors">Dry Fruits from Gilgit</Link></li>
-                        </ul>
-                    </div>
+               
 
                     {/* Newsletter Signup Form */}
                     <div>
                         <h2 className="text-lg font-bold font-body text-white mb-2 text-[#F5A623]">Stay Connected</h2>
                         <p className="text-sm text-[#F5EFE0]/80 mb-4">
-                            Subscribe to get exclusive discounts, recipe ideas, and seasonal fresh harvest updates.
+                            Subscribe to get exclusive discounts and updates.
                         </p>
                         <form onSubmit={handleSubmit} className="space-y-3" aria-label="Newsletter signup">
                             <div className="relative">
@@ -237,7 +228,7 @@ export default function Footer() {
                         </Link>
                     </div>
                     <div className="flex items-center gap-1">
-                        <span>{settings.footer_tagline || 'Crafted with ❤ for healthy living'}</span>
+                       
                     </div>
                 </div>
             </div>

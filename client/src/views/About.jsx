@@ -11,10 +11,10 @@ export default function About() {
     const { formatPrice } = useCurrency();
 
     const defaultFeatures = [
-        { icon: 'Leaf', title: '100% Organic & Natural', description: 'Sun-dried organic dry fruits sourced directly from the mountain orchards of Gilgit-Baltistan.' },
-        { icon: 'Users', title: 'Direct From Farmers', description: 'We work directly with local farmers, ensuring fair prices and the freshest harvest reaches you.' },
+        { icon: 'Users', title: 'Fast Service Support 24/7', description: 'We combine our top-tier product portfolio with a complete service model to ensure your long-term success.' },
+        { icon: 'Leaf', title: 'Money back guarantee', description: 'Deliver innovative and integrated automation solutions, tailored to each client,s unique needs and industry.' },
         { icon: 'ShieldCheck', title: 'Quality Guaranteed', description: 'Every batch is hand-sorted and quality-checked before packaging to ensure premium standards.' },
-        { icon: 'Truck', title: 'Nationwide Delivery', description: 'Carefully vacuum-sealed and delivered to your doorstep across Pakistan within 2-3 days.' }
+        { icon: 'Truck', title: 'Nationwide Delivery', description: 'Carefully vacuum-sealed and delivered to your doorstep across UAE within 2-3 days.' }
     ];
     const iconMap = { Leaf, Users, ShieldCheck, Truck, Award, Heart, Sparkles, MapPin };
     let features = defaultFeatures;
@@ -86,11 +86,11 @@ export default function About() {
                         <div className="space-y-2.5 pt-2">
                             <div className="flex items-center gap-3 text-sm font-semibold text-[#3A2E1F]">
                                 <CheckCircle2 className="w-4 h-4 text-[#D97706] shrink-0" />
-                                <span>{settings.about_bullet_1 || '100% Authentic & Naturally Sun-Dried'}</span>
+                                <span>{settings.about_bullet_1 || 'We specialize in delivering a full spectrum of cutting-edge technology'}</span>
                             </div>
                             <div className="flex items-center gap-3 text-sm font-semibold text-[#3A2E1F]">
                                 <CheckCircle2 className="w-4 h-4 text-[#D97706] shrink-0" />
-                                <span>{settings.about_bullet_2 || 'Direct From Farmers — No Middlemen'}</span>
+                                <span>{settings.about_bullet_2 || 'We combine our top-tier product portfolio with a complete service model'}</span>
                             </div>
                         </div>
                     </div>
@@ -119,7 +119,7 @@ export default function About() {
                         Why Choose {settings.store_name || 'North Dry Fruits'}?
                     </h2>
                     <p className="text-sm text-[#3A2E1F]/80 mt-1">
-                        We prioritize quality, authenticity, and freshness — bringing the best of northern Pakistan to your home.
+                        We prioritize quality, authenticity, and freshness — bringing the best of UAE to your home.
                     </p>
                 </div>
 
@@ -214,55 +214,17 @@ export default function About() {
                 </div>
             </section>
 
-            {/* Source Regions Section */}
-            <section className="w-full px-4 sm:px-8 lg:px-16 pb-14">
-                <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
-                    <div>
-                        <span className="inline-block px-3 py-1 bg-[#F5A623]/15 text-[#92400E] rounded-full text-xs font-bold uppercase tracking-wider mb-3">
-                            Source Regions
-                        </span>
-                        <h2 className="text-3xl sm:text-4xl font-extrabold font-body text-[#3A2E1F] leading-tight">
-                            Sourced from pristine northern valleys.
-                        </h2>
-                    </div>
-                    <p className="text-sm text-[#3A2E1F]/80 max-w-md">
-                        Each region has its own growing conditions, harvest traditions, and signature products.
-                    </p>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                    {[
-                        { name: 'Skardu', altitude: '2,228m', products: 'Almonds, walnuts, apricots' },
-                        { name: 'Hunza Valley', altitude: '2,400m', products: 'Apricots, mulberries, honey' },
-                        { name: 'Gilgit', altitude: '1,500m', products: 'Dry fruits, shilajit, honey' },
-                        { name: 'Baltistan', altitude: '2,500m', products: 'Organic nuts, apricots, dry fruits' }
-                    ].map((region, idx) => (
-                        <div key={idx} className="bg-white border border-[#E8DEC8] rounded-xl p-5 space-y-3 hover:border-[#F5A623] hover:shadow-md transition-all">
-                            <div className="w-10 h-10 rounded-xl bg-[#F5A623]/15 text-[#D97706] flex items-center justify-center">
-                                <MapPin className="w-5 h-5" />
-                            </div>
-                            <h3 className="font-bold text-base text-[#3A2E1F]">{region.name}</h3>
-                            <div className="flex items-center gap-1 text-[10px] text-[#3A2E1F]/80">
-                                <span>Altitude {region.altitude}</span>
-                            </div>
-                            <div className="flex items-center justify-between">
-                                <p className="text-xs text-[#3A2E1F]/80">{region.products}</p>
-                                <ArrowRight className="w-3.5 h-3.5 text-[#D97706]" />
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
 
             {/* Final CTA Banner */}
             <section className="w-full px-4 sm:px-8 lg:px-16 pb-10">
                 <div className="bg-[#3A2E1F] rounded-2xl p-8 sm:p-12 text-center space-y-4">
                     <Sparkles className="w-6 h-6 text-[#F5A623] mx-auto" />
                     <h2 className="text-2xl sm:text-3xl font-extrabold font-body text-white leading-tight">
-                        Taste the real freshness of Gilgit-Baltistan.
+                        
+We specialize in delivering a full spectrum of cutting-edge technology
                     </h2>
                     <p className="text-sm text-[#F5EFE0]/70 max-w-lg mx-auto">
-                        Explore premium dry fruits and natural products, packed fresh and delivered across Pakistan.
+                        Explore premium products, packed  and delivered across UAE.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
                         <Link

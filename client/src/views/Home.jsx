@@ -167,14 +167,7 @@ export default function Home() {
     const returnDays = Number(settings.return_window_days) || 7;
 
     const homeFaqs = [
-        {
-            q: 'Where do your dry fruits and nuts come from?',
-            a: `Our products are sourced from Gilgit-Baltistan and the northern regions of Pakistan, then delivered fresh across the country.`,
-        },
-        {
-            q: 'Do you deliver nationwide, and how long does it take?',
-            a: `Yes, we deliver nationwide across Pakistan. Orders are dispatched within 24 hours and typically arrive within 2–3 business days.`,
-        },
+    
         {
             q: 'How much does shipping cost?',
             a: `Shipping is completely free on all orders across Pakistan — there are no delivery charges.`,

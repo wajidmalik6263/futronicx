@@ -71,7 +71,7 @@ export default function CategoryShowcase({ config }) {
                                         <LazyImage
                                             src={cat.image_url}
                                             alt={cat.name}
-                                            className="w-full h-full object-cover"
+                                            className="w-full h-full p-2 object-cover"
                                             wrapperClassName="w-full h-full"
                                             rootMargin="100px"
                                             width={112}

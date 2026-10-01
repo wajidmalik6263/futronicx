@@ -244,7 +244,7 @@ export default function ProductCard({ product }) {
 
                             {/* Desktop: chips */}
                             <div className="hidden sm:block">
-                                <span className="block text-[9px] sm:text-[10px] font-bold text-[#3A2E1F]/80 mb-1">Select Pack Weight:</span>
+                                <span className="block text-[9px] sm:text-[10px] font-bold text-[#fff]/80 mb-1"></span>
                                 <div className="flex items-center gap-1 flex-wrap">
                                     {parsedWeightOptions.map((opt, idx) => (
                                         <button
@@ -256,8 +256,8 @@ export default function ProductCard({ product }) {
                                                 setSelectedWeightIndex(idx);
                                             }}
                                             className={`px-1.5 py-0.5 text-[10px] sm:text-[11px] font-bold rounded-md transition-all cursor-pointer border ${selectedWeightIndex === idx
-                                                ? 'bg-[#F5A623] text-[#3A2E1F] border-[#D97706] shadow-2xs scale-105'
-                                                : 'bg-[#F5EFE0]/60 hover:bg-[#F5EFE0] text-[#3A2E1F]/80 border-[#E8DEC8]'
+                                                ? 'bg-[#fa6800] text-[#fff] border-[#D97706] shadow-2xs scale-105'
+                                                : 'bg-[#F5EFE0]/60 hover:bg-[#F5EFE0] text-[#fff]/80 border-[#E8DEC8]'
                                                 }`}
                                         >
                                             {opt.label}
@@ -291,7 +291,7 @@ export default function ProductCard({ product }) {
                         aria-label={isOutOfStock ? 'Sold out' : `Buy ${name} now`}
                         className={`flex sm:hidden shrink-0 w-7 h-7 rounded-lg items-center justify-center transition-all duration-200 cursor-pointer active:scale-90 ${isOutOfStock
                             ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                            : 'bg-[#F5A623] text-[#3A2E1F] shadow-sm'
+                            : 'bg-[#fa6800] text-[#3A2E1F] shadow-sm'
                             }`}
                     >
                         <Zap className="w-3.5 h-3.5 fill-current" />
@@ -333,7 +333,7 @@ export default function ProductCard({ product }) {
                                 shrink-0 w-7 h-7 sm:w-9 sm:h-9 rounded-full flex items-center justify-center transition-all duration-200 cursor-pointer active:scale-90
                                 ${isOutOfStock
                                     ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                                    : 'bg-[#F5A623] hover:bg-[#D97706] text-[#3A2E1F] hover:text-white shadow-sm hover:shadow-md'
+                                    : 'bg-[#fa6800] hover:bg-[#D97706] text-[#fff] hover:text-white shadow-sm hover:shadow-md'
                                 }
                             `}
                         >
